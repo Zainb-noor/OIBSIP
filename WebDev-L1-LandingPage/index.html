@@ -4,449 +4,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Space</title>
-    <link rel="stylesheet" href="./style.css">
 
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
 
-    <!-- ================= HOME ================= -->
+    <nav class="navigation">
 
-    <page1 id="home">
+        <div class="logo">
+            <a href="#home">MY SPACE</a>
+        </div>
 
-        <!-- NAVBAR -->
+        <ul class="nav-links">
 
-        <nav class="navigation">
+            <li>
+                <a href="#home">Home</a>
+            </li>
 
-            <ol class="li1">
+            <li>
+                <a href="#features">Features</a>
+            </li>
 
-                <li>
-                    <a href="#home" class="nav-link">
-                        MY SPACE
-                    </a>
-                </li>
+            <li>
+                <a href="#about">About Us</a>
+            </li>
 
-            </ol>
+            <li>
+                <a href="#contact">Contact Us</a>
+            </li>
 
+        </ul>
 
-            <ol class="li2">
+        <a href="#contact" class="nav-button">
+            Get Started
+        </a>
 
-                <li>
-                    <a href="#home" class="nav-link">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#features" class="nav-link">
-                        Features
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about" class="nav-link">
-                        About us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact" class="nav-link">
-                        Contact us
-                    </a>
-                </li>
-
-            </ol>
+    </nav>
 
 
-            <ol class="li3">
+    <!-- ================= HERO ================= -->
 
-                <li>
+    <section class="hero" id="home">
 
-                    <a href="#contact">
+        <div class="hero-content">
 
-                        <button>
-                            Get Started
-                        </button>
+            <span class="small-title">
+                WELCOME TO MY SPACE
+            </span>
 
-                    </a>
+            <h1>
+                BUILD YOUR IDEAS
+                <br>
+                <span>WITH US</span>
+            </h1>
 
-                </li>
+            <p>
+                A simple and powerful platform to help you
+                create, manage and grow your projects —
+                all in one place.
+            </p>
 
-            </ol>
+            <a href="#contact" class="primary-button">
+                Get Started
+                <span>→</span>
+            </a>
 
-        </nav>
-
-
-        <!-- HERO -->
-
-        <section class="sec1">
-
-            <div class="box1">
-
-                <h4>
-                    WELCOME TO MY SPACE
-                </h4>
-
-                <h1>
-                    BUILD YOUR IDEAS
-                    <br>
-                    WITH US
-                </h1>
-
-                <p>
-                    A simple and powerful platform to help you
-                    creat manage and grow your projects -
-                    all in one place
-                </p>
+        </div>
 
 
-                <ol class="li3">
+        <div class="hero-image">
 
-                    <li>
+            <div class="image-glow"></div>
 
-                        <a href="#contact">
+            <img
+                src="images/img1.png"
+                alt="My Space"
+            >
 
-                            <button>
-                                Get Started
-                            </button>
+        </div>
 
-                        </a>
-
-                    </li>
-
-                </ol>
-
-            </div>
-
-
-            <div class="box2">
-
-                <img src="images/img1.png" alt="My Space">
-
-            </div>
-
-        </section>
-
-    </page1>
-
+    </section>
 
 
     <!-- ================= FEATURES ================= -->
 
-    <page2 id="features">
+    <section class="features" id="features">
 
-        <h4 style="
-            text-align: center;
-            padding-top: 10px;
-            font-size: 20px;
-            padding-bottom: 0;
-        ">
-            OUR FEATURES
-        </h4>
+        <div class="section-heading">
 
+            <span class="small-title">
+                OUR FEATURES
+            </span>
 
-        <h2 style="
-            font-size: 38px;
-            text-align: center;
-            margin: 10px;
-        ">
-            EVERYTHING YOU NEED
-        </h2>
+            <h2>
+                EVERYTHING YOU NEED
+            </h2>
 
+            <p>
+                Powerful features to help you work smarter,
+                not harder.
+            </p>
 
-        <p style="
-            text-align: center;
-            margin-top: 0;
-            font-size: 24px;
-        ">
-            powerful features to help you work smater,
-            not harder
-        </p>
+        </div>
 
 
-        <div class="main">
+        <div class="feature-grid">
 
 
-            <div class="div1">
+            <div class="feature-card">
 
-                <img
-                    src="images/img2.png"
-                    alt=""
-                    class="size"
-                >
+                <div class="icon-box">
+                    <img src="images/img2.png" alt="">
+                </div>
 
                 <h3>
-                    Fast and reliable
+                    Fast & Reliable
                 </h3>
 
                 <p>
                     Experience top-notch performance
-                    and uptimes
+                    and uptime.
                 </p>
+
+                <span class="card-arrow">→</span>
 
             </div>
 
 
+            <div class="feature-card">
 
-            <div class="div2">
-
-                <img
-                    src="images/img3.png"
-                    alt=""
-                    class="size"
-                >
+                <div class="icon-box">
+                    <img src="images/img3.png" alt="">
+                </div>
 
                 <h3>
                     Secure
                 </h3>
 
                 <p>
-                    You data is always protected to us
+                    Your data is always protected
+                    and safe with us.
                 </p>
+
+                <span class="card-arrow">→</span>
 
             </div>
 
 
+            <div class="feature-card">
 
-            <div class="div3">
-
-                <img
-                    src="images/img4.png"
-                    alt=""
-                    class="size"
-                >
+                <div class="icon-box">
+                    <img src="images/img4.png" alt="">
+                </div>
 
                 <h3>
-                    Easy to use
+                    Easy To Use
                 </h3>
 
                 <p>
-                    Intuitive interface designed for
-                    ease of use
+                    An intuitive interface designed
+                    for everyone.
                 </p>
+
+                <span class="card-arrow">→</span>
 
             </div>
 
 
+            <div class="feature-card">
 
-            <div class="div4">
-
-                <img
-                    src="images/img5.png"
-                    alt=""
-                    class="size"
-                >
+                <div class="icon-box">
+                    <img src="images/img5.png" alt="">
+                </div>
 
                 <h3>
                     Customizable
                 </h3>
 
                 <p>
-                    We're here whenever you need to help
+                    We're here whenever you need
+                    help or support.
                 </p>
+
+                <span class="card-arrow">→</span>
 
             </div>
 
         </div>
 
-    </page2>
-
+    </section>
 
 
     <!-- ================= ABOUT ================= -->
 
-    <div class="page3" id="about">
+    <section class="about" id="about">
 
+        <div class="about-image">
 
-        <div class="div5">
+            <div class="about-image-frame"></div>
 
             <img
                 src="images/img7.jfif"
-                alt="About us"
-                style="object-fit: contain;"
+                alt="About My Space"
             >
 
         </div>
 
 
+        <div class="about-content">
 
-        <div class="div6">
-
-            <h4>
+            <span class="small-title">
                 ABOUT US
-            </h4>
+            </span>
 
-
-            <h2 style="
-                font-size: 40px;
-                margin: 0;
-            ">
-                We're on a mission to make your life easier
+            <h2>
+                We're on a mission to
+                <span>make your life easier.</span>
             </h2>
 
-
             <p>
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Iste nesciunt dquibusdam,
-                voluptate nobis quisquam laboriosam illo
-                eligendi aut quaerat doloremque dolorem
-                repellendus dolores esse quam nisi.
+                My Space is designed to give you everything
+                you need to create, organize and grow your
+                ideas in one simple place.
             </p>
 
+            <p>
+                We believe powerful tools shouldn't be
+                complicated. That's why we've created a
+                clean, simple and flexible experience.
+            </p>
 
-            <button style="
-                color: #c77dff;
-                background-color: transparent;
-                border-radius: 20px;
-                border-color: #c77dff;
-                padding: 10px 20px;
-                cursor: pointer;
-            ">
-                learn more
-            </button>
+            <a href="#contact" class="outline-button">
+                Learn More
+                <span>→</span>
+            </a>
 
         </div>
 
-    </div>
-
+    </section>
 
 
     <!-- ================= TESTIMONIALS ================= -->
 
-    <div class="page5">
+    <section class="testimonials">
+
+        <div class="section-heading">
+
+            <span class="small-title">
+                WHAT OUR USERS SAY
+            </span>
+
+            <h2>
+                TRUSTED BY THOUSANDS
+            </h2>
+
+            <p>
+                Here's what some of our amazing users
+                have to say about MY SPACE.
+            </p>
+
+        </div>
 
 
-        <h4 style="
-            text-align: center;
-            padding-top: 10px;
-            font-size: 20px;
-            padding-bottom: 0;
-        ">
-            WHAT OUR USERS SAY:
-        </h4>
+        <div class="testimonial-grid">
 
 
-        <h2 style="
-            font-size: 38px;
-            text-align: center;
-            margin: 10px;
-        ">
-            TRUSTED BY THOUSANDS
-        </h2>
+            <div class="testimonial-card">
 
-
-        <p style="
-            text-align: center;
-            margin-top: 0;
-            font-size: 24px;
-        ">
-            Here's what some of our amazing users
-            have to say about MYSPACE
-        </p>
-
-
-
-        <div class="parts">
-
-
-            <!-- USER 1 -->
-
-            <div class="part">
+                <div class="quote">
+                    “
+                </div>
 
                 <p>
-                    "Lorem ipsum dolor sit amet,
-                    consectetur maiores blanditiis
-                    tempore cupiditate fugiat sit
-                    similique ex sed deserunt eligendi
-                    corrupti error ut laudantium."
+                    My Space has made managing my projects
+                    much easier. Everything I need is finally
+                    organized in one place.
                 </p>
 
-
-                <div style="
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-                ">
+                <div class="user">
 
                     <img
                         src="images/img8.jfif"
-                        alt=""
+                        alt="Ayesha Khan"
                     >
 
-                    <h4>
-                        Ayesha khan
-                    </h4>
+                    <div>
+                        <h4>Ayesha Khan</h4>
+                        <span>Product Designer</span>
+                    </div>
 
                 </div>
 
             </div>
 
 
+            <div class="testimonial-card">
 
-            <!-- USER 2 -->
-
-            <div class="part">
+                <div class="quote">
+                    “
+                </div>
 
                 <p>
-                    "Lorem ipsum dolor sit amet,
-                    consectetur maiores blanditiis
-                    tempore cupiditate fugiat sit
-                    similique ex sed deserunt eligendi
-                    corrupti error ut laudantium."
+                    The interface is incredibly simple and
+                    beautiful. I can focus on my work without
+                    getting distracted.
                 </p>
 
-
-                <div style="
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-                ">
+                <div class="user">
 
                     <img
                         src="images/img9.jfif"
-                        alt=""
+                        alt="Aiman Khan"
                     >
 
-                    <h4>
-                        Aiman khan
-                    </h4>
+                    <div>
+                        <h4>Aiman Khan</h4>
+                        <span>Creative Designer</span>
+                    </div>
 
                 </div>
 
             </div>
 
 
+            <div class="testimonial-card">
 
-            <!-- USER 3 -->
-
-            <div class="part">
+                <div class="quote">
+                    “
+                </div>
 
                 <p>
-                    "Lorem ipsum dolor sit amet,
-                    consectetur maiores blanditiis
-                    tempore cupiditate fugiat sit
-                    similique ex sed deserunt eligendi
-                    corrupti error ut laudantium."
+                    Fast, reliable and easy to use. My Space
+                    has completely changed the way I organize
+                    my projects.
                 </p>
 
-
-                <div style="
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-                ">
+                <div class="user">
 
                     <img
                         src="images/img10.jfif"
-                        alt=""
+                        alt="Ali Khan"
                     >
 
-                    <h4>
-                        Ali khan
-                    </h4>
+                    <div>
+                        <h4>Ali Khan</h4>
+                        <span>Developer</span>
+                    </div>
 
                 </div>
 
@@ -454,79 +362,76 @@
 
         </div>
 
-    </div>
+    </section>
 
 
-
-    <!-- ================= CONTACT / FOOTER ================= -->
+    <!-- ================= FOOTER ================= -->
 
     <footer id="contact">
 
+        <div class="footer-brand">
 
-        <ol>
+            <h2>
+                MY SPACE
+            </h2>
 
-            <li class="li1">
-                MYSPACE
-            </li>
+            <p>
+                Build your ideas.
+                Grow your future.
+            </p>
 
-        </ol>
-
-
-
-        <ol>
-
-            <li>
-                Home
-            </li>
-
-            <li>
-                Features
-            </li>
-
-            <li>
-                About
-            </li>
-
-            <li>
-                Contact
-            </li>
-
-        </ol>
+        </div>
 
 
+        <div class="footer-column">
 
-        <ol>
+            <h3>Quick Links</h3>
 
-            <li>
-                Contact us:
-            </li>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
 
-            <li>
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Address</h3>
+
+            <p>
                 1234 Street Name
-            </li>
+            </p>
 
-        </ol>
-
-
-
-        <ol>
-
-            <li>
-                Contact:
-            </li>
-
-            <li>
-                +935468292
-            </li>
-
-            <li>
+            <p>
                 Lahore, Pakistan
-            </li>
+            </p>
 
-        </ol>
+        </div>
 
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <p>
+                +93 546 8292
+            </p>
+
+            <p>
+                hello@myspace.com
+            </p>
+
+        </div>
 
     </footer>
+
+
+    <div class="copyright">
+
+        © 2026 My Space. All rights reserved.
+
+    </div>
 
 
 </body>
