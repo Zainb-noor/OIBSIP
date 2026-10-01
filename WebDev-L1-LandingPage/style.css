@@ -1,0 +1,671 @@
+/* ================= GENERAL ================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        page1,
+        page2 {
+            display: block;
+        }
+
+        section,
+        page2,
+        .page3,
+        .page5,
+        footer {
+            scroll-margin-top: 80px;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: #7b2cbf;
+            color: white;
+
+            padding: 10px 5%;
+            min-height: 70px;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+        }
+
+        ol {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .li1 {
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        .li2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            font-size: larger;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #e0aaff;
+        }
+
+        .li3 button {
+            font-size: 20px;
+
+            border-radius: 20px;
+
+            padding: 10px 20px;
+
+            border: none;
+
+            background-color: #c77dff;
+
+            color: white;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .li3 button:hover {
+            background-color: #9d4edd;
+            transform: scale(1.05);
+        }
+
+
+        /* ================= HERO SECTION ================= */
+
+        .sec1 {
+            display: flex;
+
+            justify-content: space-evenly;
+            align-items: center;
+
+            gap: 40px;
+
+            padding: 60px 5%;
+
+            background-color: #ffeff2;
+
+            min-height: 75vh;
+        }
+
+        .box1 {
+            flex: 1;
+            max-width: 650px;
+        }
+
+        h1 {
+            font-size: 70px;
+
+            font-weight: bolder;
+
+            margin: 0;
+
+            color: #7b2cbf;
+
+            line-height: 1.1;
+        }
+
+        h4 {
+            font-size: 30px;
+
+            margin: 0;
+
+            color: #c77dff;
+        }
+
+        .box1 p {
+            font-size: 20px;
+
+            color: #7b2cbf;
+
+            line-height: 1.6;
+        }
+
+        .box2 {
+            flex: 1;
+
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .box2 img {
+            width: 100%;
+
+            max-width: 400px;
+
+            height: auto;
+        }
+
+
+        /* ================= FEATURES ================= */
+
+        .main {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+
+            padding: 20px 5%;
+
+            margin-bottom: 40px;
+        }
+
+        .div1,
+        .div2,
+        .div3,
+        .div4 {
+
+            border: 1px solid black;
+
+            border-radius: 10px;
+
+            text-align: center;
+
+            padding: 20px;
+
+            width: 100%;
+
+            min-height: 200px;
+        }
+
+        .size {
+            height: 50px;
+
+            width: auto;
+
+            max-width: 100%;
+        }
+
+        .main p {
+            line-height: 1.5;
+        }
+
+
+        /* ================= ABOUT SECTION ================= */
+
+        .page3 {
+            display: flex;
+
+            justify-content: space-evenly;
+
+            align-items: center;
+
+            gap: 50px;
+
+            padding: 60px 5%;
+
+            background-color: #ffeff2;
+        }
+
+        .div5,
+        .div6 {
+            width: 45%;
+        }
+
+        .div5 img {
+            width: 100%;
+
+            height: 250px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+        }
+
+        .div6 h2 {
+            line-height: 1.2;
+        }
+
+        .div6 p {
+            line-height: 1.6;
+        }
+
+
+        /* ================= TESTIMONIALS ================= */
+
+        .parts {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+
+            padding: 30px 5%;
+        }
+
+        .part {
+            display: grid;
+
+            border-radius: 20px;
+
+            width: 100%;
+
+            border: 1px solid black;
+
+            padding: 20px;
+        }
+
+        .part img {
+            height: 50px;
+
+            width: 50px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+        }
+
+        .part p {
+            line-height: 1.6;
+        }
+
+        .part h4 {
+            font-size: 20px;
+        }
+
+
+        /* ================= FOOTER / CONTACT ================= */
+
+        footer {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 30px;
+
+            background-color: #7b2cbf;
+
+            color: white;
+
+            padding: 40px 5%;
+        }
+
+        footer ol {
+            padding: 0;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        footer .li1 {
+            color: white;
+        }
+
+
+        /* ================= TABLET ================= */
+
+        @media (max-width: 992px) {
+
+            nav {
+                padding: 10px 3%;
+            }
+
+            .li1 {
+                font-size: 25px;
+            }
+
+            .li2 {
+                gap: 12px;
+
+                font-size: 16px;
+            }
+
+            .li3 button {
+                font-size: 16px;
+
+                padding: 8px 15px;
+            }
+
+
+            /* HERO */
+
+            .sec1 {
+                padding: 50px 5%;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            .box1 p {
+                font-size: 18px;
+            }
+
+            .box2 img {
+                max-width: 330px;
+            }
+
+
+            /* FEATURES */
+
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            /* ABOUT */
+
+            .page3 {
+                gap: 30px;
+            }
+
+            .div5,
+            .div6 {
+                width: 50%;
+            }
+
+
+            /* TESTIMONIALS */
+
+            .parts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            /* FOOTER */
+
+            footer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 768px) {
+
+            /* NAVBAR */
+
+            nav {
+                flex-direction: column;
+
+                gap: 15px;
+
+                height: auto;
+
+                padding: 20px;
+            }
+
+            .li1 {
+                font-size: 28px;
+            }
+
+            .li2 {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 12px;
+
+                font-size: 15px;
+            }
+
+            .li3 button {
+                font-size: 16px;
+
+                padding: 8px 16px;
+            }
+
+
+            /* HERO */
+
+            .sec1 {
+                flex-direction: column;
+
+                text-align: center;
+
+                padding: 50px 20px;
+
+                min-height: auto;
+            }
+
+            .box1 {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            .box1 p {
+                font-size: 17px;
+            }
+
+            .box2 {
+                width: 100%;
+            }
+
+            .box2 img {
+                width: 80%;
+
+                max-width: 350px;
+            }
+
+
+            /* FEATURES */
+
+            .main {
+                grid-template-columns: 1fr;
+
+                padding: 20px;
+            }
+
+            .div1,
+            .div2,
+            .div3,
+            .div4 {
+                min-height: auto;
+            }
+
+
+            /* ABOUT */
+
+            .page3 {
+                flex-direction: column;
+
+                padding: 50px 20px;
+
+                text-align: center;
+            }
+
+            .div5,
+            .div6 {
+                width: 100%;
+            }
+
+            .div5 img {
+                height: auto;
+
+                max-height: 300px;
+            }
+
+            .div6 h2 {
+                font-size: 32px !important;
+            }
+
+
+            /* TESTIMONIALS */
+
+            .parts {
+                grid-template-columns: 1fr;
+
+                padding: 20px;
+            }
+
+            .page5 h2 {
+                font-size: 30px !important;
+            }
+
+            .page5 > p {
+                font-size: 18px !important;
+
+                padding: 0 15px;
+            }
+
+
+            /* FOOTER */
+
+            footer {
+                grid-template-columns: 1fr;
+
+                text-align: center;
+
+                padding: 35px 20px;
+            }
+
+            footer ol {
+                margin-bottom: 10px;
+            }
+        }
+
+
+        /* ================= SMALL MOBILE ================= */
+
+        @media (max-width: 480px) {
+
+            nav {
+                padding: 15px;
+            }
+
+            .li1 {
+                font-size: 24px;
+            }
+
+            .li2 {
+                display: grid;
+
+                grid-template-columns: repeat(2, 1fr);
+
+                text-align: center;
+
+                width: 100%;
+            }
+
+            .li3 button {
+                font-size: 15px;
+
+                padding: 8px 15px;
+            }
+
+
+            /* HERO */
+
+            .sec1 {
+                padding: 40px 15px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+
+            .box1 p {
+                font-size: 15px;
+            }
+
+            .box2 img {
+                width: 90%;
+            }
+
+
+            /* FEATURES */
+
+            .main {
+                padding: 15px;
+            }
+
+            .main h3 {
+                font-size: 20px;
+            }
+
+            .main p {
+                font-size: 15px;
+            }
+
+
+            /* ABOUT */
+
+            .page3 {
+                padding: 40px 15px;
+            }
+
+            .div6 h2 {
+                font-size: 27px !important;
+            }
+
+            .div6 p {
+                font-size: 15px;
+            }
+
+
+            /* TESTIMONIALS */
+
+            .parts {
+                padding: 15px;
+            }
+
+            .part {
+                padding: 15px;
+            }
+
+            .page5 h2 {
+                font-size: 26px !important;
+            }
+
+            .page5 > p {
+                font-size: 16px !important;
+            }
+
+
+            /* FOOTER */
+
+            footer {
+                padding: 30px 15px;
+            }
+        }
