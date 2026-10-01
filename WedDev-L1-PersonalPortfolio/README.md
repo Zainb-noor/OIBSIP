@@ -17,7 +17,7 @@ This project is a responsive personal portfolio website created using HTML and C
 - HTML5
 - CSS3
 ## Project Structure 
-- `task2.html` — Main webpage
-- `task2.css` — Website styling -
+- `index.html` — Main webpage
+- `style.css` — Website styling -
 - `images/` — Images used in the project
 ## Internship OASIS INFOBYTE — SIP Internship
