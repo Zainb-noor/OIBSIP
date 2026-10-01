@@ -17,9 +17,9 @@
 -  CSS3
 -  JavaScript
 ## Project Structure 
-- `task3.html` — Main webpage 
-- `task3.css` — Website styling 
-- `task3.js` — Temperature conversion functionality 
+- `index.html` — Main webpage 
+- `style.css` — Website styling 
+- `script.js` — Temperature conversion functionality 
 ## Internship OASIS INFOBYTE — SIP Internship
 ## Author 
 Zainab Noor
