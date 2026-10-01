@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="task3.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            Temp<span>Convert</span>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#converter">Converter</a>
+            </li>
+
+            <li>
+                <a href="#how">How It Works</a>
+            </li>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Convert Temperature <span>Easily</span>
+            </h1>
+
+            <p>
+                Enter a temperature, choose your units,
+                and get the result instantly.
+            </p>
+
+            <a href="#converter" class="hero-button">
+                Try the Converter
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONVERTER SECTION -->
+
+    <section class="converter-section" id="converter">
+
+        <div class="section-title">
+
+            <h2>Temperature Converter</h2>
+
+            <p>
+                Convert between Celsius, Fahrenheit and Kelvin.
+            </p>
+
+        </div>
+
+
+        <div class="converter-box">
+
+
+            <!-- TEMPERATURE INPUT -->
+
+            <div class="form-group">
+
+                <label for="temperature">
+                    Enter Temperature
+                </label>
+
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Example: 25"
+                    step="any"
+                >
+
+            </div>
+
+
+            <!-- FROM UNIT -->
+
+            <div class="form-group">
+
+                <label for="fromUnit">
+                    Convert From
+                </label>
+
+                <select id="fromUnit">
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- TO UNIT -->
+
+            <div class="form-group">
+
+                <label for="toUnit">
+                    Convert To
+                </label>
+
+                <select id="toUnit">
+
+                    <option value="fahrenheit">
+                        Fahrenheit (°F)
+                    </option>
+
+                    <option value="celsius">
+                        Celsius (°C)
+                    </option>
+
+                    <option value="kelvin">
+                        Kelvin (K)
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ERROR MESSAGE -->
+
+            <div
+                class="error-message"
+                id="error">
+            </div>
+
+
+            <!-- CONVERT BUTTON -->
+
+            <button
+                class="convert-button"
+                id="convertButton"
+                type="button">
+
+                Convert Temperature
+
+            </button>
+
+
+            <!-- RESULT -->
+
+            <div
+                class="result-box"
+                id="resultBox">
+
+                <h3>
+                    Your Result
+                </h3>
+
+                <div id="result">
+                    --
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section
+        class="how-section"
+        id="how">
+
+        <div class="section-title">
+
+            <h2>
+                How It Works
+            </h2>
+
+            <p>
+                Converting temperature only takes
+                a few simple steps.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <!-- STEP 1 -->
+
+            <div class="step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <h3>
+                    Enter a Value
+                </h3>
+
+                <p>
+                    Type the temperature value
+                    you want to convert.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <h3>
+                    Choose Units
+                </h3>
+
+                <p>
+                    Select the unit you are converting
+                    from and the unit you want as your result.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <h3>
+                    Get Your Answer
+                </h3>
+
+                <p>
+                    Click the button and the converted
+                    temperature will appear below.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section
+        class="about"
+        id="about">
+
+        <div class="about-content">
+
+            <div class="section-title">
+
+                <h2>
+                    About This Project
+                </h2>
+
+            </div>
+
+            <p>
+                I created this small tool to make
+                temperature conversion quick and easy.
+                It supports Celsius, Fahrenheit and Kelvin
+                and also checks for invalid temperatures.
+            </p>
+
+            <p>
+                This project was built using HTML,
+                CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            <strong>
+                Temp<span>Convert</span>
+            </strong>
+        </p>
+
+        <p>
+            A simple temperature conversion tool.
+        </p>
+
+        <p>
+            Made with HTML, CSS & JavaScript
+        </p>
+
+        <p>
+            © 2026 TempConvert. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- External JavaScript -->
+    <script src="task3.js"></script>
+
+</body>
+
+</html>
+
